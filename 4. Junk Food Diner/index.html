@@ -9,6 +9,9 @@
    <meta name="x-apple-disable-message-reformatting">
    <meta name="color-scheme" content="light dark">
    <meta name="supported-color-schemes" content="light dark">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Ultra&display=swap" rel="stylesheet">
    <title>HTML Email Template Boilerplate</title>
    <!--[if mso]>
       <noscript>
@@ -44,16 +47,30 @@
          font-size: 16px;
       }
 
+      .copy {
+         text-align: justify;
+         font-size: 13px;
+      }
+
       .content {
          line-height: 20px;
          font-size: 16px;
       }
 
-      /* table,
-        tr,
-        td {
-            border: solid blue 2px;
-      } */
+      .stardard-header {
+         font-family: "Ultra", serif;
+
+      }
+
+      .cursive-header {
+         font-family: "Cookie", san-serif;
+      }
+
+      table,
+      tr,
+      td {
+         border: solid blue 2px;
+      }
 
       u+.body .gmail-blend-screen {
          background: #000;
@@ -205,7 +222,7 @@
                </td>
             </tr>
             <tr>
-               <td style="padding: 120px 50px 25px 50px;"><!-- header --->
+               <td style="padding: 120px 50px 15px 50px;"><!-- header --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
                         <td>
@@ -218,13 +235,13 @@
                               </tr>
                            </table>
                         </td>
-                        <td>
+                        <td style="text-align: center;">
                            <table width="100%" style="border-spacing: 0;" role="presentation">
                               <tr>
-                                 <td>Cooking</td>
+                                 <td class="stardard-header" style="font-size: 60px">Cooking</td>
                               </tr>
                               <tr>
-                                 <td>Challenge</td>
+                                 <td class="cursive-header" style="font-size: 60px">Challenge</td>
                               </tr>
                            </table>
                         </td>
@@ -249,13 +266,15 @@
                </td>
             </tr>
             <tr>
-               <td style="padding: 25px 50px;"><!-- two column copy --->
+               <td style="padding: 15px 50px 25px 50px;"><!-- two column copy --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio mauris, finibus
+                        <td class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio mauris,
+                           finibus
                            efficitur ultricies vel, sollicitudin nec libero. Pellentesque sed aollicitudin tellus. Sed
                            vitae laoreet sapien, ques laoreet quam.</td>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio mauris, finibus
+                        <td class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer odio mauris,
+                           finibus
                            efficitur ultricies vel,
                            sollicitudin nec libero. Pellentesque sed aollicitudin tellus. Sed vitae laoreet sapien, ques
                            laoreet quam.</td>
@@ -267,17 +286,23 @@
                <td style="padding: 0 50px;"><!-- healthy ingredients --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
-                        <td><img src="chicken wings.jpg" alt="" title="" width="100%" /></td>
+                        <td style="text-align: center; width: 50%; min-width: 50%;"><img src="chicken wings.jpg" alt=""
+                              title="" width="100%" height=""
+                              style="max-width: 162.33px; border: solid white 2px; border-radius: 20px;" /></td>
                         <td>
                            <table width="100%" style="border-spacing: 0;" role="presentation">
                               <tr>
-                                 <td>Healthy<br/>Ingedient</td>
+                                 <td class="stardard-header" style="font-size: 35px; text-align: center;"><span
+                                       style="letter-spacing: 6px;">Healthy</span><br />Ingedient</td>
                               </tr>
                               <tr>
-                                 <td>Transformations</td>
+                                 <td class="cursive-header"
+                                    style="font-size: 35px; text-align: center;letter-spacing: 4px;">Transformations
+                                 </td>
                               </tr>
                               <tr>
-                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis sed risus
+                                 <td class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin iaculis
+                                    sed risus
                                     sed
                                     aliquam. Duis lobortis leo ac nunc
                                     suscipit lacinia. Nullam.</td>
@@ -285,37 +310,41 @@
                            </table>
                         </td>
                      </tr>
-                     <tr>
-                        <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sit amet orci sem.
-                           Pellentesque facilisis sagittis
-                           risus, vitae ultrices dolor commodo at. Pellentesque habitant morbi tristique senectus et
-                           netus et malesuada fames ac
-                           turpis egestas. Proin.</td>
-                     </tr>
                   </table>
                </td>
             </tr>
             <tr>
-               <td style="padding: 0 50px;"> <!-- seasonal ingredients --->
+               <td class="copy" style="padding: 15px 50px 15px 0; padding-left: calc(25% + 25px);">Lorem ipsum dolor sit
+                  amet, consectetur adipiscing elit. Mauris sit amet orci sem.
+                  Pellentesque facilisis sagittis
+                  risus, vitae ultrices dolor commodo at. Pellentesque habitant morbi tristique senectus et
+                  netus et malesuada fames ac
+                  turpis egestas. Proin.</td>
+            </tr>
+            <tr>
+               <td style="padding: 0 100px 0 50px;"> <!-- seasonal ingredients --->
                   <table width="100%" style="border-spacing: 0;" role="presentation">
                      <tr>
                         <td>
                            <table width="100%" style="border-spacing: 0;" role="presentation">
                               <tr>
-                                 <td>Seasonal Ingedients</td>
+                                 <td class="stardard-header" style="font-size: 20px;">Seasonal Ingedients</td>
                               </tr>
                               <tr>
-                                 <td>Challenges</td>
+                                 <td class="cursive-header" style="font-size: 35px; letter-spacing: 4px;">Challenges
+                                 </td>
                               </tr>
                               <tr>
-                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam condimentum ornare
+                                 <td class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                                    condimentum ornare
                                     libero id consequat. Sed purus dolor,
                                     mollis quis urna a, gravida finibus mauris. Nulla ex tortor, pharetra in nulla a,
                                     iaculis consequat sem. Sed scelerisque
                                     condimentum libero, id aliquet velit mollis sit.</td>
                               </tr>
                               <tr>
-                                 <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper justo a enim
+                                 <td class="copy">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam semper
+                                    justo a enim
                                     vehicula lobortis. Aenean ullamcorper
                                     quis libero in elementum. Morbi efficitur felis lorem, ut convallis massa venenatis
                                     vitae. Vestibulum lacinia risus
@@ -325,19 +354,30 @@
 
                            </table>
                         </td>
-                        <td><img src="chicken wings.jpg" alt="" title="" width="100%" /></td>
+                        <td>
+                           <table width="100%" style="border-spacing: 0;" role="presentation">
+                              <tr>
+                                 <td><img src="chicken wings.jpg" alt="" title="" width="100%" style="max-width: 110px; width: 110px; border: solid white 2px; border-radius: 20px;" /></td>
+                              </tr>
+                              <tr>
+                                 <td><img src="chicken wings.jpg" alt="" title="" width="100%" style="max-width: 110px; width: 110px; border: solid white 2px; border-radius: 20px;" /></td>
+                              </tr>
+                           </table>
+
+                        </td>
                      </tr>
                   </table>
                </td>
             </tr>
             <tr>
-               <td style="padding: 25px 0; background-color: white; color: black !important;"> <!-- footer --->
+               <td style="padding: 25px 50px; background-color: white; color: black !important;"> <!-- footer --->
                   <table width="100%"
                      style="border-spacing: 0; background-color: white !important; color: black !important;"
                      role="presentation">
                      <tr>
                         <td><img src="mail-svgrepo-com.svg" alt="" title="" width="20px" />email@example.com</td>
-                        <td>www.example.com<img src="globe-alt-1-svgrepo-com.svg" alt="" title="" width="20px" /></td>
+                        <td style="text-align: right;">www.example.com<img src="globe-alt-1-svgrepo-com.svg" alt=""
+                              title="" width="20px" /></td>
                      </tr>
                   </table>
                </td>
